@@ -1,10 +1,3 @@
--- SELECT column_1
--- FROM table_1
--- WHERE column_1 = (
---    SELECT column_1 
---    FROM table_2
--- );
-
 SELECT first_name, last_name, position, salary, department_id, hire_date
 FROM employees
 WHERE position LIKE '%Engineer%' AND salary > '50000'
