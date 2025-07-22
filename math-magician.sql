@@ -1,5 +1,4 @@
-ALTER TABLE students ADD COLUMN test_score INTEGER;
-
+ALTER TABLE students ADD COLUMN test_score INTEGER
 UPDATE students
 SET test_score = CASE first_name
     WHEN 'Mustafa' THEN 90
@@ -11,8 +10,9 @@ SET test_score = CASE first_name
     WHEN 'Albert' THEN 99
 END;
 
-ALTER TABLE students ADD COLUMN adjusted_score INTEGER;
-
+ALTER TABLE students ADD COLUMN adjusted_score INTEGER
 UPDATE students
 SET adjusted_score = test_score + 5
 WHERE first_name IN ('Mustafa', 'Arthur', 'Elnar', 'Charlotte', 'Edmond', 'Mercedes', 'Albert');
+
+SELECT * FROM students;
