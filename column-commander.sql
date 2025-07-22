@@ -7,6 +7,6 @@ SELECT email AS contact_info, position AS job_title
 FROM employees
 WHERE position = 'Lead Engineer';
 
-SELECT first_name || ' ' || last_name AS given_name, salary AS monthly_income
+SELECT first_name || last_name AS given_name, salary AS monthly_income
 FROM employees
 ORDER BY salary, given_name DESC;
