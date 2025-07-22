@@ -8,7 +8,12 @@ FROM employees
 WHERE department_id = (
     SELECT department_id
     FROM departments
-    WHERE name = 'Human Resources' OR name = 'Finance'
+    WHERE name = 'Human Resources'
+)
+OR department_id = (
+    SELECT department_id
+    FROM departments
+    WHERE name = 'Finance'
 )
 ORDER BY first_name DESC;
 
