@@ -15,5 +15,5 @@ ORDER BY salary;
 
 SELECT first_name, last_name, salary, position, hire_date
 FROM employees
-WHERE department_id IN ('Warehouse Manager', 'Senior Researcher', 'Lead Engineer')
+WHERE position IN ('Warehouse Manager', 'Senior Researcher', 'Lead Engineer')
 ORDER BY salary;
