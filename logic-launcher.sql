@@ -9,8 +9,7 @@ WHERE department_id = (
     SELECT department_id
     FROM departments
     WHERE name = 'Human Resources'
-)
-OR department_id = (
+) OR department_id = (
     SELECT department_id
     FROM departments
     WHERE name = 'Finance'
