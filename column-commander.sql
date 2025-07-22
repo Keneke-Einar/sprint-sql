@@ -9,4 +9,4 @@ WHERE position = 'Lead Engineer';
 
 SELECT first_name || last_name AS given_name, salary AS monthly_income
 FROM employees
-ORDER BY salary, given_name DESC;
+ORDER BY salary DESC, given_name;
