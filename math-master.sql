@@ -1,0 +1,2 @@
+SELECT name, ABS(quantity - 100) AS quantity_diff, ROUND(price) AS rounded_price, rating * 20 AS rating_percent, MAX(price, 50) AS price_or_50, MIN(quantity, 200) AS quantity_cap, quantity * price AS total_value
+FROM products
