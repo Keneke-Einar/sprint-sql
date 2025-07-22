@@ -17,4 +17,4 @@ UPDATE students
 SET adjusted_score = test_score + 5
 WHERE first_name IN ('Mustafa', 'Arthur', 'Elnar', 'Charlotte', 'Edmond', 'Mercedes', 'Albert');
 
-SELECT * FROM students;
+SELECT first_name, last_name, test_score, adjusted_score FROM students;
