@@ -9,4 +9,10 @@ SET test_score = CASE first_name
     WHEN 'Edmond' THEN 70
     WHEN 'Mercedes' THEN 75
     WHEN 'Albert' THEN 99
-END
+END;
+
+ALTER TABLE students ADD COLUMN adjusted_score INTEGER;
+
+UPDATE students
+SET adjusted_score = test_score + 5
+WHERE first_name IN ('Mustafa', 'Arthur', 'Elnar', 'Charlotte', 'Edmond', 'Mercedes', 'Albert');
