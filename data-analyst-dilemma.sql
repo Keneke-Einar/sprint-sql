@@ -1,6 +1,6 @@
 SELECT rating, 
     SUM(price * quantity) AS total_inventory_value,
-    (SELECT ROUND(AVG(rating)) FROM products) AS average_rating
+    ROUND(AVG(rating), 1) AS average_rating
 FROM products 
 GROUP BY rating
 HAVING total_inventory_value > 20000
