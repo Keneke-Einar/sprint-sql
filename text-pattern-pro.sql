@@ -1,7 +1,7 @@
 SELECT 
 CASE
     WHEN budget > '1000000' THEN UPPER(name) || ' - LARGE BUDGET'
-    WHEN budget BETWEEN '500000' AND '1000000' THEN UPPER(SUBSTR(name,1,1)) || ' - Medium'
+    WHEN budget BETWEEN '650001' AND '1000000' THEN UPPER(SUBSTR(name,1,1)) || ' - Medium'
     ELSE LOWER(name) || ' - small budget'
 END AS department_display
 FROM departments
