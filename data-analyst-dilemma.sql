@@ -5,4 +5,4 @@ FROM products
 GROUP BY rating
 HAVING total_inventory_value > 20000
     AND (SELECT ROUND(AVG(rating)) AS average_rating FROM products) + 50000
-ORDER BY total_inventory_value;
+ORDER BY total_inventory_value DESC;
