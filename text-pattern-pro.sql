@@ -7,7 +7,7 @@ END AS department_display
 FROM departments
 ORDER BY department_display DESC;
 
-SELECT last_name || ', ' || first_name || ' - ' || position AS employee_info
+SELECT UPPER(last_name) || ', ' || UPPER(first_name) || ' - ' || LOWER(position) AS employee_info
 FROM employees
 WHERE (first_name LIKE '_a%' OR first_name LIKE '_e%')
 AND (position LIKE '%Manager' OR position LIKE '%Analyst')
