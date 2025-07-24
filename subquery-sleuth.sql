@@ -1,4 +1,4 @@
-SELECT first_name, last_name, department_id
+SELECT first_name, last_name
 FROM employees
 WHERE department_id = (
     SELECT department_id 
