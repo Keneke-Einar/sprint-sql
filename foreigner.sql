@@ -1,4 +1,4 @@
-SELECT customers.CustomerId, customers.FirstName || ' ' || customers.LastName AS CustomerName, employees.FirstName || employees.LastName AS SupportRepName, employees.Title AS SupportRepTitle
+SELECT customers.CustomerId, customers.FirstName || ' ' || customers.LastName AS CustomerName, employees.FirstName || ' ' || employees.LastName AS SupportRepName, employees.Title AS SupportRepTitle
 FROM customers
 JOIN employees ON customers.SupportRepId = employees.EmployeeId
 ORDER BY CustomerName;
