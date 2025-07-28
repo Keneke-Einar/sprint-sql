@@ -3,7 +3,7 @@ FROM customers
 JOIN employees ON customers.SupportRepId = employees.EmployeeId
 ORDER BY CustomerName;
 
-SELECT invoices.InvoiceId, invoices.InvoiceDate, customers.FirstName || customers.LastName AS CustomerName
+SELECT invoices.InvoiceId, invoices.InvoiceDate, customers.FirstName || ' ' || customers.LastName AS CustomerName
 FROM invoices
 JOIN customers ON invoices.CustomerId = customers.CustomerId
 ORDER BY CustomerName DESC;
